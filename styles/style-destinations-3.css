@@ -1,0 +1,528 @@
+@charset "utf-8";
+/* CSS Document */
+
+html {
+	background-color: #FAFAFA;
+	color: #354E52;
+}
+
+body {
+	text-align: center;
+	min-height: 100vh;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+}
+
+.button {
+	border: 0px solid white;
+	padding: 10px 20px;
+	border-radius: 30px;
+    text-align: center;
+	background-color: transparent;
+	color: #354E52;
+    text-decoration: none;
+    font-size: 18px;
+	font-weight: bold;
+	transition: background-color 0.2s;
+}
+.location {
+	font-family: Cinzel, "Cinzel Black";
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: none;
+	border: 0px solid white;
+	color: #354E52;
+	background-color: transparent;
+}
+.location:hover {
+	font-family: Cinzel, "Cinzel Black";
+	font-size: 20px;
+	text-shadow: 1px 1px #354E52;
+	font-weight: bold;
+	border: 0px solid white;
+	color: #354E52;
+	background-color: transparent;
+}
+
+.button:hover {
+	border: 0px solid white;
+	padding: 10px 20px;
+	border-radius: 30px;
+    text-align: center;
+	background-color: #354E52;
+	color: #FAFAFA;
+    text-decoration: none;
+    font-size: 18px;
+	font-weight: bold;
+}
+
+.button:focus {
+	outline: 0;
+	border: 0px solid white;
+	padding: 10px 20px;
+	border-radius: 30px;
+    text-align: center;
+	background-color: transparent;
+	color: #354E52;
+    text-decoration-line: underline;
+	text-decoration-thickness: 3px;
+	text-underline-offset: 0.5em;
+    font-size: 18px;
+	font-weight: bold;
+}
+
+.button-book {
+	background-color: #354E52;
+	color: #FAFAFA;
+	border: 2px solid #354E52;
+}
+.button-book:hover {
+	background-color: #FAFAFA;
+	color: #354E52;
+	border: 2px solid #354E52;
+}
+.button-book:focus {
+	text-decoration: none;
+}
+
+.navtable {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.headername {
+	margin-top: -3%;
+	padding-bottom: 1.5%;
+	font-size: 40px;
+	font-weight: bold;
+}
+.overlap {
+	position: relative;
+}
+.overlap.headername {
+	top: -10px;
+}
+
+.body {
+	padding-top: 0.001%;
+	padding-bottom: 2%;
+	background-color: #F3FDFF;
+}
+
+/*Body*/
+.map {
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 115px;
+	width: 1000px;
+	font-family: Cinzel, "Cinzel Black";
+	font-size: 20px;
+	font-weight: bold;
+	background-image: url("../images/map_nowords.jpg");
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.map tr {
+	min-width: 1000px;
+}
+.grimm {
+	text-align: left;
+	padding-top: 5px;
+	padding-left: 100px;
+	padding-bottom: 150px;
+}
+.neverland {
+	text-align: left;
+	padding-top: 35px;
+	padding-left: 290px;
+}
+.percy {
+	font-size: 17px;
+	width: 400px;
+	padding-top: 29px;
+	padding-left: 125px;
+}
+.jules {
+	text-align: left;
+	padding: 0;
+	margin: 0;
+}
+.jules div {
+	margin-left: 15px;
+	display: inline-block;
+}
+.wonderland {
+	padding-top: 130px;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+.middleearth {
+	margin: 0px;
+	padding: 0px;
+}
+.verticalset {
+	writing-mode: vertical-rl;
+	transform: rotate(-10deg);
+	display: inline-block;
+	margin: 0px;
+	padding-top: 25px;
+	padding-left: 100px;
+}
+.panem {
+	text-align: left;
+	padding-left: 350px;
+}
+.harrypotter {
+	text-align: left;
+	padding-top: 100px;
+}
+.harrypotter div {
+	margin-left: 2px;
+	display: inline-block;
+}
+.narnia {
+	padding: 0;
+	margin: 0;
+}
+.narnia div {
+	margin-top: 160px;
+	margin-left: -780px;
+	display: inline-block;
+}
+.dc {
+	padding: 0;
+	margin: 0;
+}
+.dc div {
+	margin-top: 10px;
+	margin-left: -360px;
+	display: inline-block;
+}
+
+
+/*Demo*/
+
+.modal {
+	background: #D1E3E6;
+	height: 1px;
+	overflow-y: auto;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: width 0.5s ease 0.5s, 
+			  height 0.5s ease;
+	width: 0;
+}
+.modal h2 {
+	font-family: Cinzel, "Cinzel Black";
+}
+
+.content {
+	color: #354E52;
+	position: absolute;
+	text-align: center;
+	transition: color 0.5s ease;
+	width: 80%;
+	left: 10%;
+}
+
+label {
+  color: #354E52;
+  cursor: pointer;
+  font-family: Cinzel, "Cinzel Black";
+}
+
+input {
+  cursor: pointer;
+  height: 0;
+  opacity: 0;
+  width: 0;
+}
+
+input:focus {
+  outline: none;
+}
+
+input:checked {
+	height: 40px;
+	opacity: 1;
+	position: fixed;
+	right: 20px;
+	top: 20px;
+	z-index: 1;
+	appearance: none;
+	width: 40px;
+}
+
+input:checked::after,
+input:checked::before {
+  border-top: 1px solid black;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: rotate(45deg);
+  width: 100%;
+}
+
+input:checked::after {
+  transform: rotate(-45deg);
+}
+
+input:checked + label {
+  transition: color 0.5s ease;
+}
+
+#grimmpop:checked ~ .grimm-modal {
+  height: 80%;
+  width: 80%;
+  transition: width 0.5s ease, 
+              height 0.5s ease 0.5s;
+}
+
+#grimmpop:checked ~ .grimm-modal .grimm-content {
+	transition: color 0.5s ease 0.5s;
+}
+
+#neverlandpop:checked ~ .neverland-modal {
+  height: 80%;
+  width: 80%;
+  transition: width 0.5s ease, 
+              height 0.5s ease 0.5s;
+}
+
+#neverlandpop:checked ~ .neverland-modal .neverland-content {
+	transition: color 0.5s ease 0.5s;
+}
+
+#percypop:checked ~ .percy-modal {
+  height: 80%;
+  width: 80%;
+  transition: width 0.5s ease, 
+              height 0.5s ease 0.5s;
+}
+
+#percypop:checked ~ .percy-modal .percy-content {
+	transition: color 0.5s ease 0.5s;
+}
+
+#julespop:checked ~ .jules-modal {
+  height: 80%;
+  width: 80%;
+  transition: width 0.5s ease, 
+              height 0.5s ease 0.5s;
+}
+
+#julespop:checked ~ .jules-modal .jules-content {
+	transition: color 0.5s ease 0.5s;
+}
+
+#wonderlandpop:checked ~ .wonderland-modal {
+  height: 80%;
+  width: 80%;
+  transition: width 0.5s ease, 
+              height 0.5s ease 0.5s;
+}
+
+#wonderlandpop:checked ~ .wonderland-modal .wonderland-content {
+	transition: color 0.5s ease 0.5s;
+}
+
+#middleearthpop:checked ~ .middleearth-modal {
+  height: 80%;
+  width: 80%;
+  transition: width 0.5s ease, 
+              height 0.5s ease 0.5s;
+}
+
+#middleearthpop:checked ~ .middleearth-modal .middleearth-content {
+	transition: color 0.5s ease 0.5s;
+}
+
+#panempop:checked ~ .panem-modal {
+  height: 80%;
+  width: 80%;
+  transition: width 0.5s ease, 
+              height 0.5s ease 0.5s;
+}
+
+#panempop:checked ~ .panem-modal .panem-content {
+	transition: color 0.5s ease 0.5s;
+}
+
+#harrypotterpop:checked ~ .harrypotter-modal {
+  height: 80%;
+  width: 80%;
+  transition: width 0.5s ease, 
+              height 0.5s ease 0.5s;
+}
+
+#harrypotterpop:checked ~ .harrypotter-modal .harrypotter-content {
+	transition: color 0.5s ease 0.5s;
+}
+
+#narniapop:checked ~ .narnia-modal {
+  height: 80%;
+  width: 80%;
+  transition: width 0.5s ease, 
+              height 0.5s ease 0.5s;
+}
+
+#narniapop:checked ~ .narnia-modal .narnia-content {
+	transition: color 0.5s ease 0.5s;
+}
+
+#dcpop:checked ~ .dc-modal {
+  height: 80%;
+  width: 80%;
+  transition: width 0.5s ease, 
+              height 0.5s ease 0.5s;
+}
+
+#dcpop:checked ~ .dc-modal .dc-content {
+	transition: color 0.5s ease 0.5s;
+}
+
+.img-column {
+	float: left;
+	width: 50%;
+	padding: 5px;
+}
+.img-column img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+.img-row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+.img-row {
+	display: flex;
+}
+.img-column {
+
+	padding: 5px;
+}
+.grimm-content .img-column {
+	flex: 1;
+}
+.neverland-content .img-column {
+	flex: 1;
+}
+.percy-content .img-column:first-child {
+	flex: 1;
+}
+.percy-content .img-column:last-child {
+	flex: 2;
+}
+.jules-content .img-column {
+	flex: 1;
+}
+.wonderland-content .img-column:first-child {
+	flex: 1;
+}
+.wonderland-content .img-column:last-child {
+	flex: 1;
+}
+.middleearth-content .img-column {
+	flex: 1;
+}
+.panem-content .img-column {
+	flex: 1;
+}
+.harrypotter-content .img-row {
+	.img-column:first-child {
+	flex: 1;
+	}
+	.img-column:last-child {
+	flex: 1;
+	}
+}
+.narnia-content .img-column:first-child {
+	flex: 1;
+}
+.narnia-content .img-column:last-child {
+	flex: 1;
+}
+.dc-content .img-column {
+	flex: 1;
+}
+
+@media screen and (max-width: 500px) {
+	.img-column {
+	width: 100%;
+	}
+}
+
+/*Information*/
+
+.info {
+	position: fixed;
+	left: 50%;
+	transform: translateX(-50%);	
+	border: 2px solid #354E52;
+	border-radius: 21px;
+	min-width: 300px;
+	min-height: 40px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.info input{
+	display: none;
+}
+.info input:checked ~ label span:last-child{
+	display: none;
+}
+.info input:not(:checked) ~ label span:first-child{
+	display: none;
+}
+.info label{
+	display: block;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	user-select: none;
+	width: 301px;
+	height: 41px;
+	text-align: center;
+	line-height: 40px;
+	background: #354E52;
+	color: #FAFAFA;
+	border-bottom-left-radius: 20px;
+	cursor: pointer;
+}
+.info ul{
+	overflow: hidden;
+	width: 0;
+	height: 0;
+	padding: 40px 0 0 0;
+	margin: 0;
+	transition: width 0.5s, height 0.5s;
+	list-style: none;
+}
+
+.info input:checked ~ ul{
+	width: 800px;
+	height: 100%;
+}
+
+.info ul li{
+	padding: 0 10px;
+	color: #354E52;
+	text-align: justify;
+	transition: color 0.5s, background 0.5s;
+}
+
+/*Footer*/
+
+.footer p {
+	margin: 0px;
+}

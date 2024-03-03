@@ -1,0 +1,136 @@
+@charset "utf-8";
+/* CSS Document */
+
+html {
+	background-color: #FAFAFA;
+	color: #354E52;
+}
+
+body {
+	text-align: center;
+	min-height: 100vh;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+}
+
+.button {
+	border: 0px solid white;
+	padding: 10px 20px;
+	border-radius: 30px;
+    text-align: center;
+	background-color: transparent;
+	color: #354E52;
+    text-decoration: none;
+    font-size: 18px;
+	font-weight: bold;
+	transition: background-color 0.2s;
+}
+
+.button:hover {
+	border: 0px solid white;
+	padding: 10px 20px;
+	border-radius: 30px;
+    text-align: center;
+	background-color: #354E52;
+	color: #FAFAFA;
+    text-decoration: none;
+    font-size: 18px;
+	font-weight: bold;
+}
+
+.button:focus {
+	outline: 0;
+	border: 0px solid white;
+	padding: 10px 20px;
+	border-radius: 30px;
+    text-align: center;
+	background-color: transparent;
+	color: #354E52;
+    text-decoration-line: underline;
+	text-decoration-thickness: 3px;
+	text-underline-offset: 0.5em;
+    font-size: 18px;
+	font-weight: bold;
+}
+
+.navtable {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.headername {
+	margin-top: -3%;
+	padding-bottom: 1.5%;
+	font-size: 40px;
+	font-weight: bold;
+}
+.overlap {
+	position: relative;
+}
+.overlap.headername {
+	top: -10px;
+}
+
+.body {
+	padding-top: 2%;
+	padding-bottom: 2%;
+	background-color: #F3FDFF;
+}
+
+/*Body*/
+
+.aboutpage {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	border-collapse: collapse;
+	background-color: #D1E3E6;
+}
+
+.topimage {
+	padding: 0;
+	position: relative;
+}
+.topimage img {
+	display: block;
+}
+.image {
+	width: 60%;
+	padding: 0;
+	position: relative;
+	text-align: right;
+}
+.image img {
+	display: block;
+}
+.description {
+	font-family: "Playfair Display", sans-serif;
+	font-size: 35px;
+	background-color: #D1E3E6;
+	width: 40%;
+	padding: 3%;
+}
+
+a.aboutbutton {
+	padding: 10px 20px;
+    text-align: center;
+	border: 2px solid #354E52;
+	background-color: #354E52;
+	color: #FAFAFAFA;
+    text-decoration: none;
+    font-size: 25px;
+	font-weight: bold;
+	transition: background-color 0.2s;
+}
+
+a.aboutbutton:hover {
+	background-color: #FAFAFAFA;
+	color: #354E52;
+}	
+
+
+/*Footer*/
+
+.footer p {
+	margin: 0px;
+}

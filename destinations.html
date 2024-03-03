@@ -1,0 +1,286 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Booked.com</title>
+<link href="styles/style-destinations-3.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel">
+</head>
+
+<body>
+	<div class="header">
+		<div class="headerlogo"><img src="images/logo-lg.png" width="200px" height="200px"></div>
+		<div class="headername">Booked.com</div>
+		<div class="headernav">
+			<table class="navtable">
+				<tr>
+					<th><a href="index.html"><button type="button" class="button">HOME</button></a></th>
+					<th><a href="about.html"><button type="button" class="button">ABOUT</button></a></th>
+					<th><a href="destinations.html"><button type="button" class="button" autofocus>DESTINATIONS</button></a></th>
+					<th><a href="book.html"><button type="button" class="button">BOOK</button></a></th>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<br>
+	<div class="body">
+		<table class="map">
+			<tbody>
+				<tr>
+					<input id="grimmpop" type="checkbox"></input>
+					<td class="grimm"><label for="grimmpop">Grimm Brother's World</label></td>
+				</tr>
+				<tr>
+					<input id="neverlandpop" type="checkbox"></input>
+					<td class="neverland"><label for="neverlandpop">Neverland</label></td>
+					<input id="percypop" type="checkbox"></input>
+					<td class="percy" colspan="2"><label for="percypop">Percy Jackson's<br>New York</label></td>
+				</tr>
+				<tr>
+					<input id="julespop" type="checkbox"></input>
+					<td class="jules"><label for="julespop"><div align="center">Jules Verne's<br>Universe</div></label></td>
+					<input id="wonderlandpop" type="checkbox"></input>
+					<td class="wonderland"><label for="wonderlandpop">Wonderland</label></td>
+					<input id="middleearthpop" type="checkbox"></input>
+					<td class="verticalset" rowspan="2"><label for="middleearthpop"><p class="middleearth">Middle Earth</p></label></td>
+				</tr>
+				<tr>
+					<input id="panempop" type="checkbox"></input>
+					<td class="panem" colspan="2"><label for="panempop">Panem</label></td>
+				</tr>
+				<tr>
+					<input id="harrypotterpop" type="checkbox"></input>
+					<td class="harrypotter"><label for="harrypotterpop"><div align="center">Harry<br>Potter</div></label></td>
+					<input id="narniapop" type="checkbox"></input>
+					<td class="narnia"><label for="narniapop"><div>Narnia</div></label></td>
+					<input id="dcpop" type="checkbox"></input>
+					<td class="dc"><label for="dcpop"><div>DC Universe</div></label></td>
+				</tr>
+			</tbody>
+		</table>
+		<h2>Ready to embark on an adventure?</h2>
+		<a href="book.html"><button type="button" class="button button-book">BOOK AN APPOINTMENT</button></a>
+		<div class="modal grimm-modal">
+			<h2 class="popheader" align="center">Grimm Brother's World</h2>
+			<div class="content grimm-content">
+				<div class="img-row">
+					<div class="img-column">
+						<img src="images/grimmbrothers.jpg" width="100%">
+					</div>
+				</div>
+				<h4>Sometimes, fairy tales do come true. Explore the nostalgic world of your favorite childhood stories in the land of the Grimm Brothers.</h4>
+				<nav class="info">
+					<input type="checkbox" id="info-grimm">
+					<label for="info-grimm">Must-Visit Sites and Experiences</label>
+					<ul>
+						<li><p><strong>Jack's Beanstalk:</strong> Visit the stump of the legendary beanstalk that was grown and chopped down by Jack. If you visit at the right time, you might be able to snap a photo with Jack himself!</p></li>
+						<li><p><strong>Rapunzel's Tower:</strong> Visit the beautiful tower that trapped Rapunzel from the rest of the world for years. Now an official Brother's Grimm Historic Site, visitors can climb a newly constructed spiral staircase to the top of the tower and enjoy a breathtaking view.</p></li>
+						<li><p><strong>The Gingerbread House:</strong> Take a forested path to the house of the infamous witch who captured Hansel and Gretel. Because this is technically a crime site, entry is not permitted; however, you are welcome to enjoy the view from afar.</p></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div class="modal neverland-modal">
+			<h2 class="popheader" align="center">Neverland</h2>
+			<div class="content neverland-content">
+				<div class="img-row">
+					<div class="img-column">
+						<img src="images/neverland.jpg" width="100%">
+					</div>
+				</div>
+				<h4>Fly away from the troubles of adulthood for this magical fictional experience. Maximum age requirement: 12 yrs.</h4>
+				<nav class="info">
+					<input type="checkbox" id="info-neverland">
+					<label for="info-neverland">Must-Visit Sites and Experiences</label>
+					<ul>
+						<li><p><strong>Neverland Cove:</strong> Swim with mermaids and step aboard Captain Hook's pirate ship. Completed liability form required for participation.</p></li>
+						<li><p><strong>Meet the Lost Boys:</strong> Spend a day running through the forest and getting yourself into mischief with the Lost Boys.</p></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div class="modal percy-modal">
+			<h2 class="popheader" align="center">Percy Jackson's New York</h2>
+			<div class="content percy-content">
+				<div class="img-row">
+					<div class="img-column">
+						<img src="images/Percy Jackson.jpg" width="100%">
+					</div>
+					<div class="img-column">
+						<img src="images/percyjackson.jpg" width="100%">
+					</div>
+				</div>
+				<h4>Enjoy the life of a half-blood without worrying about being attacked by monsters at any moment. We recommend that participants take a physical exam before partaking in this experience.</h4>
+				<nav class="info">
+					<input type="checkbox" id="info-percy">
+					<label for="info-percy">Must-Visit Sites and Experiences</label>
+					<ul>
+						<li><p><strong>Camp Half-Blood:</strong> Visit the place where half-bloods are trained. Participate in campfire songs, an obstacle course, and a dangerous game of capture the flag.</p></li>
+						<li><p><strong>Hippocampus Ride:</strong> Experience Long Island Sound as never before: riding through the waves on the back of a hippocampus.</p></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div class="modal jules-modal">
+			<h2 class="popheader" align="center">Jules Verne's Universe</h2>
+			<div class="content jules-content">
+				<div class="img-row">
+					<div class="img-column">
+						<img src="images/julesverne.jpg" width="100%">
+					</div>
+				</div>
+				<h4>Honor the adventurous spirit of Jules Verne's stories by embarking on the very paths his characters once traversed.</h4>
+				<nav class="info">
+					<input type="checkbox" id="info-jules">
+					<label for="info-jules">Must-Visit Sites and Experiences</label>
+					<ul>
+						<li><p><strong>Around the map in 80 hours:</strong> Fly over our entire map of fictional locations in an approximately four-day-long hot air balloon ride. Take a pit stop in Neverland to say hello to the mermaids, or picnic on the fiery rocks of Mordor. Food and sleeping bags provided.</p></li>
+						<li><p><strong>Journey to the center of the earth:</strong> Traverse the treacherous path to the center of the earth. Our least-popular experience.</p></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div class="modal wonderland-modal">
+			<h2 class="popheader" align="center">Wonderland</h2>
+			<div class="content wonderland-content">
+				<div class="img-row">
+					<div class="img-column">
+						<img src="images/Wonderland Signs.jpg" width="100%">
+					</div>
+					<div class="img-column">
+						<img src="images/wonderland.jpg" width="100%">
+					</div>
+				</div>
+				<h4>Enjoy the whimsical Wonderland, where there is so much to do and explore that it is easy to fall into a rabbit hole and stay there forever.</h4>
+				<nav class="info">
+					<input type="checkbox" id="info-wonderland">
+					<label for="info-wonderland">Must-Visit Sites and Experiences</label>
+					<ul>
+						<li><p><strong>Tea Party:</strong> Enjoy a cup of tea with the Mad Hatter and the March Hare.</p></li>
+						<li><p><strong>Shrink and Grow:</strong> Taste magical drinks and cakes that will make you shrink as small as a doll and grow as large as a giant. We recommend recording your height before the experience to ensure that you leave Wonderland exactly as you were before.</p></li>
+						<li><p><strong>Croquet:</strong> Play croquet with the Queen of Hearts (no flamingoes will be harmed during this experience. We recommend that you wear a protective covering on your neck, though).</p></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div class="modal middleearth-modal">
+			<h2 class="popheader" align="center">Middle Earth</h2>
+			<div class="content middleearth-content">
+				<div class="img-row">
+					<div class="img-column">
+						<img src="images/middleearth.jpg" width="100%">
+					</div>
+				</div>
+				<h4>Explore Tolkien's Middle Earth without the prospect of defeating a dragon or the burden of a ring that could destroy the world.</h4>
+				<nav class="info">
+					<input type="checkbox" id="info-middleearth">
+					<label for="info-middleearth">Must-Visit Sites and Experiences</label>
+					<ul>
+						<li><p><strong>The Shire:</strong> Enjoy meals from first breakfast to elevensies with the hobbits. If you're fortunate enough to visit when Gandalf is in town, enjoy a night of dancing and fireworks.</p></li>
+						<li><p><strong>Riveldell:</strong> Dine and chat with the elves while enjoying gentle harp music and a peaceful atmosphere.</p></li>
+						<li><p><strong>Mordor:</strong> Though this is likely our lease popular experience next to the journey to the center of the earth, we think it is worth the trek. Just be careful that you don't get too close to the lava.</p></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div class="modal panem-modal">
+			<h2 class="popheader" align="center">Panem</h2>
+			<div class="content panem-content">
+				<div class="img-row">
+					<div class="img-column">
+						<img src="images/panem.jpg" width="100%">
+					</div>
+				</div>
+				<h4>Tour the world of Suzanne Collins' Hunger Games. We recommend that travelers go in groups of at least three; should you find yourself in a dangerous situation, the bigger your group, the greater your odds of surviving.</h4>
+				<nav class="info">
+					<input type="checkbox" id="info-panem">
+					<label for="info-panem">Must-Visit Sites and Experiences</label>
+					<ul>
+						<li><p><strong>Train ride through Panem:</strong> Buckle up for a train ride from District 12 to the Capitol. The train will stop at each district, allowing you to explore the unique culture of each one—from District 12's coal mining industry to District 4's fishing industry.</p></li>
+						<li><p><strong>Capitol Experience:</strong> Experience the luxury and extravagant culture of the Capitol. But be careful not to get too swept away.</p></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div class="modal harrypotter-modal">
+			<h2 class="popheader" align="center">Harry Potter</h2>
+			<div class="content harrypotter-content">
+				<div class="img-row">
+					<div class="img-column">
+						<img src="images/Hogwarts.jpg" width="100%">
+					</div>
+					<div class="img-column">
+						<img src="images/harrypotter.jpg" width="100%">
+					</div>
+				</div>
+				<div class="img-row">
+					<div class="img-column">
+						<img src="images/harrpotter-homepagefeatured.jpg" width="100%">
+					</div>
+					<div class="img-column">
+						<img src="images/Hogsmeade.jpg" width="100%">
+					</div>
+				</div>
+				<h4>Do you ever wish you could apparate into the rich and magical Wizarding World? We can't teach you apparition, but we can help you plan an unforgettable adventure into Harry Potter's world.</h4>
+				<nav class="info">
+					<input type="checkbox" id="info-harrypotter">
+					<label for="info-harrypotter">Must-Visit Sites and Experiences</label>
+					<ul>
+						<li><p><strong>Hogwarts Overnight Experience:</strong> Ride the Hogwarts Express to the famous School of Witchcraft and Wizardry and spend the night in a dormitory of your choice (Hufflepuff, Gryffindor, Ravenclaw, or Slytherin). Explore the Hogwarts castle and grounds. Have breakfast in the Great Hall and an afternoon picnic on the shore of the Great Lake.</p></li>
+						<li><p><strong>Hogsmeade:</strong> Visit the quaint town nestled beside Hogwarts. Enjoy a butterbeer in the Three Broomsticks and try a cockroach cluster from Honeyduke's.</p></li>
+						<li><p><strong>Thestral Ride:</strong> Join Hagrid on a ride through the Forbidden Forest in a thestral-drawn carriage. Completed liability form required for participation.</p></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div class="modal narnia-modal">
+			<h2 class="popheader" align="center">Narnia</h2>
+			<div class="content narnia-content">
+				<div class="img-row">
+					<div class="img-column">
+						<img src="images/narnia-homepagefeatured.jpg" width="100%">
+					</div>
+					<div class="img-column">
+						<img src="images/narnia.jpg" width="100%">
+					</div>
+				</div>
+				<h4>You don't need a wardrobe to enter Narnia! Booking.com is happy to help you plan a magical trip to Narnia, which, thanks to the Pevensie children, is no longer in an eternal winter.</h4>
+				<nav class="info">
+					<input type="checkbox" id="info-narnia">
+					<label for="info-narnia">Must-Visit Sites and Experiences</label>
+					<ul>
+						<li><p><strong>Mr. Tumnus' House:</strong> Visit the hospitable Mr. Tumnus in his home near the lamppost. Enjoy a pleasant night of good food, music, and a crackling fire.</p></li>
+						<li><p><strong>Cair Paravel:</strong> Visit the beautiful seaside palace from which the Pevensie children reign Narnia. Enjoy a chat with Lucy Pevensie over tea and toast.</p></li>
+						<li><p><strong>Dawn Treader Cruise:</strong> Spend three days on the Dawn Treader. Learn how to swordfight, breathe the invigorating air of the open sea, and enjoy the beautiful sight of the sun setting on the Narnian horizon.</p></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div class="modal dc-modal">
+			<h2 class="popheader" align="center">DC Universe</h2>
+			<div class="content dc-content">
+				<div class="img-row">
+					<div class="img-column">
+						<img src="images/dc.jpg" width="100%">
+					</div>
+				</div>
+				<h4>Unmask the world of the DC superheroes.</h4>
+				<nav class="info">
+					<input type="checkbox" id="info-dc">
+					<label for="info-dc">Must-Visit Sites and Experiences</label>
+					<ul>
+						<li><p><strong>Wayne Manor:</strong> Visit this lovely building in Gotham City. If you're lucky, you might find something in the basement.</p></li>
+						<li><p><strong>Atlantis:</strong> Swim to the depths of the ocean to visit the legendary sunken city.</p></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+	<hr />
+	<div class="footer">
+		<h3>Booked.com © 2023. All rights reserved</h3>
+		<p>Cruzen-Murray Library</p>
+		<p>2112 Cleveland Blvd, Caldwell, ID 83605</p>
+	</div>
+</body>
+</html>

@@ -1,0 +1,151 @@
+@charset "utf-8";
+/* CSS Document */
+
+html {
+	background-color: #FAFAFA;
+	color: #354E52;
+}
+
+body {
+	text-align: center;
+	min-height: 100vh;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+}
+
+.button {
+	border: 0px solid white;
+	padding: 10px 20px;
+	border-radius: 30px;
+    text-align: center;
+	background-color: transparent;
+	color: #354E52;
+    text-decoration: none;
+    font-size: 18px;
+	font-weight: bold;
+	transition: background-color 0.2s;
+}
+
+.button:hover {
+	border: 0px solid white;
+	padding: 10px 20px;
+	border-radius: 30px;
+    text-align: center;
+	background-color: #354E52;
+	color: #FAFAFA;
+    text-decoration: none;
+    font-size: 18px;
+	font-weight: bold;
+}
+
+.button:focus {
+	outline: 0;
+	border: 0px solid white;
+	padding: 10px 20px;
+	border-radius: 30px;
+    text-align: center;
+	background-color: transparent;
+	color: #354E52;
+    text-decoration-line: underline;
+	text-decoration-thickness: 3px;
+	text-underline-offset: 0.5em;
+    font-size: 18px;
+	font-weight: bold;
+}
+
+.navtable {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.headername {
+	margin-top: -3%;
+	padding-bottom: 1.5%;
+	font-size: 40px;
+	font-weight: bold;
+}
+.overlap {
+	position: relative;
+}
+.overlap.headername {
+	top: -10px;
+}
+
+.body {
+	padding-top: 0.001%;
+	padding-bottom: 2%;
+	background-color: #F3FDFF;
+}
+
+/*Contact Form*/
+
+.contact-form {
+	padding: 10px;
+	width: 60%;
+	background-image: url("../images/contact.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.contact-form h1 {
+	color: #354E52;
+}
+
+.table-form {
+	display: table;
+}
+
+.textbox {
+	display: table-cell;
+	padding: 10px;
+	border-radius: 20px;
+	margin: 10px;
+}
+.dropdown {
+	display: table-cell;
+	padding: 10px;
+	border-radius: 20px;
+	margin: 10px;
+}
+select:invalid {color: gray;}
+.textbox-long {
+	display: table-cell;
+	width: 300px;
+	padding: 10px;
+	border-radius: 20px;
+	margin: 10px;
+}
+.textarea {
+	display: table-cell;
+	padding: 10px;
+	border-radius: 20px;
+	margin: 10px;
+}
+.submit-btn {
+	padding: 8px 20px;
+	border-radius: 30px;
+    text-align: center;
+	background-color: #FAFAFAFA;
+	color: #354E52;
+    font-size: 18px;
+	font-weight: 600;
+	transition: background-color 0.2s;
+}
+.submit-btn:hover {
+	background-color: #354E52;
+	color: #FAFAFAFA;
+}
+#thankYou {
+	display: none;
+}
+#thankYou:target {
+	display: block;
+	color: #354E52;
+}
+
+/*Footer*/
+
+.footer p {
+	margin: 0px;
+}

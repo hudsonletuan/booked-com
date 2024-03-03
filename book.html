@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Booked.com</title>
+<link href="styles/style-book-3.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div class="header">
+		<div class="headerlogo"><img src="images/logo-lg.png" width="200px" height="200px"></div>
+		<div class="headername">Booked.com</div>
+		<div class="headernav">
+			<table class="navtable">
+				<tr>
+					<th><a href="index.html"><button type="button" class="button">HOME</button></a></th>
+					<th><a href="about.html"><button type="button" class="button">ABOUT</button></a></th>
+					<th><a href="destinations.html"><button type="button" class="button">DESTINATIONS</button></a></th>
+					<th><a href="book.html"><button type="button" class="button" autofocus>BOOK</button></a></th>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<br>
+	<div class="body">
+		<div>
+			<h1 align="center">Planning a trip?</h1>
+			<h2 align="center">Book a free appointment with one of our travel agents here:</h2>
+		</div>
+		<div align="center">
+			<div class="contact-form">
+				<h1>BOOKING YOUR APPOINTMENT</h1>
+				<form action="#thankYou" class="table-form">
+					<input type="text" class="textbox" placeholder="First Name (required)" name="firstName" required>
+					<input type="text" class="textbox" placeholder="Last Name (required)" name="lastName" required>
+					<br>
+					<select class="dropdown" name="destinations" required>
+						<option value="" disabled selected>Select your desired destination</option>
+						<option value="jules-verne">Jules Verne</option>
+						<option value="grimm-brothers">Grimm Brothers</option>
+						<option value="harry-potter">Harry Potter</option>
+						<option value="panem">Panem</option>
+						<option value="narnia">Narnia</option>
+						<option value="wonderland">Wonderland</option>
+						<option value="neverland">Neverland</option>
+						<option value="percy-jackson">Percy Jackson</option>
+						<option value="dc-universe">DC Universe</option>
+						<option value="middle-earth">Middle Earth</option>
+					</select>
+					<br>
+					<input type="text" class="textbox-long" placeholder="Phone Number" name="phoneNumber">
+					<br>
+					<input type="text" class="textbox-long" placeholder="Email Address" name="emailAddress">
+					<br>
+					<textarea class="textarea" placeholder="Please provide us any noteworthy information..." name="noteworthy-info" cols="50" rows="10"></textarea>
+					<hr />
+					<button type="submit" class="submit-btn">BOOK</button>
+					<br>
+					<p id="thankYou">Thank you for your booking! We will be in touch! &#9829;</p>
+				</form>
+			</div>
+		</div>
+	</div>
+	<hr />
+	<div class="footer">
+		<h3>Booked.com © 2023. All rights reserved</h3>
+		<p>Cruzen-Murray Library</p>
+		<p>2112 Cleveland Blvd, Caldwell, ID 83605</p>
+	</div>
+</body>
+</html>
